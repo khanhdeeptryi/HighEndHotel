@@ -1,0 +1,112 @@
+Array
+(
+    [partnerCode] => MOMOBKUN20180529
+    [orderId] => 1724866252
+    [requestId] => 1724866252
+    [amount] => 800000
+    [responseTime] => 1724866262748
+    [message] => Thành công.
+    [resultCode] => 0
+    [payUrl] => https://test-payment.momo.vn/v2/gateway/pay?t=TU9NT0JLVU4yMDE4MDUyOXwxNzI0ODY2MjUy&s=62eeeaa5d8c53e44bc19a7ed33ed6c3ee3018be74dd5956878058517652acba9
+    [deeplink] => momo://app?action=payWithApp&isScanQR=false&serviceType=app&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzI0ODY2MjUy&v=3.0
+    [qrCodeUrl] => momo://app?action=payWithApp&isScanQR=true&serviceType=qr&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzI0ODY2MjUy&v=3.0
+    [applink] => https://test-applinks.momo.vn/payment/v2?action=payWithApp&isScanQR=false&serviceType=app&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzI0ODY2MjUy&v=3.0&deeplinkCallback=http%3A%2F%2Ftravel.name.vn%2Fbookings.php&callBackUrl=http%3A%2F%2Ftravel.name.vn%2Fbookings.php
+    [deeplinkMiniApp] => momo://app?action=payWithApp&isScanQR=false&serviceType=miniapp&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzI0ODY2MjUy&v=3.0
+    [signature] => ef96557173ec2160205cbcde0a6e6bc7fc0fac593635eaf5640e3618e4b34e9d
+)
+Array
+(
+    [partnerCode] => MOMOBKUN20180529
+    [orderId] => 1724931319
+    [requestId] => 1724931319
+    [amount] => 7998000
+    [responseTime] => 1724931327704
+    [message] => Thành công.
+    [resultCode] => 0
+    [payUrl] => https://test-payment.momo.vn/v2/gateway/pay?t=TU9NT0JLVU4yMDE4MDUyOXwxNzI0OTMxMzE5&s=1b6af6b990fec81fcfd5a8a1385733d9a8b8121c7769054479938665bd82bfda
+    [deeplink] => momo://app?action=payWithApp&isScanQR=false&serviceType=app&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzI0OTMxMzE5&v=3.0
+    [qrCodeUrl] => momo://app?action=payWithApp&isScanQR=true&serviceType=qr&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzI0OTMxMzE5&v=3.0
+    [applink] => https://test-applinks.momo.vn/payment/v2?action=payWithApp&isScanQR=false&serviceType=app&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzI0OTMxMzE5&v=3.0&deeplinkCallback=http%3A%2F%2Ftravel.name.vn%2Fbookings.php&callBackUrl=http%3A%2F%2Ftravel.name.vn%2Fbookings.php
+    [deeplinkMiniApp] => momo://app?action=payWithApp&isScanQR=false&serviceType=miniapp&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzI0OTMxMzE5&v=3.0
+    [signature] => ef27415382e327e5ebb2802075a5d3fbd0498269ccdf6f72fd5a027382b5bd14
+)
+Array
+(
+    [partnerCode] => MOMOBKUN20180529
+    [orderId] => 1724949657
+    [requestId] => 1724949657
+    [amount] => 3999000
+    [responseTime] => 1724949666379
+    [message] => Thành công.
+    [resultCode] => 0
+    [payUrl] => https://test-payment.momo.vn/v2/gateway/pay?t=TU9NT0JLVU4yMDE4MDUyOXwxNzI0OTQ5NjU3&s=521fbf11b9871393f592e05dde78d712ec613bfd3a0e6f6bc5b4f07c0c47507d
+    [deeplink] => momo://app?action=payWithApp&isScanQR=false&serviceType=app&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzI0OTQ5NjU3&v=3.0
+    [qrCodeUrl] => momo://app?action=payWithApp&isScanQR=true&serviceType=qr&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzI0OTQ5NjU3&v=3.0
+    [applink] => https://test-applinks.momo.vn/payment/v2?action=payWithApp&isScanQR=false&serviceType=app&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzI0OTQ5NjU3&v=3.0&deeplinkCallback=http%3A%2F%2Ftravel.name.vn%2Fbookings.php&callBackUrl=http%3A%2F%2Ftravel.name.vn%2Fbookings.php
+    [deeplinkMiniApp] => momo://app?action=payWithApp&isScanQR=false&serviceType=miniapp&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzI0OTQ5NjU3&v=3.0
+    [signature] => c04201ee35a11b94347bdec7878ff156290f850bfe22f966a70ae6cbe3c48938
+)
+Array
+(
+    [partnerCode] => MOMOBKUN20180529
+    [orderId] => 1724985562
+    [requestId] => 1724985562
+    [amount] => 3200000
+    [responseTime] => 1724985570844
+    [message] => Thành công.
+    [resultCode] => 0
+    [payUrl] => https://test-payment.momo.vn/v2/gateway/pay?t=TU9NT0JLVU4yMDE4MDUyOXwxNzI0OTg1NTYy&s=e7d3d586f61c931c8a3d9d7849c9176efb3b0ea7194887a832ab1ea84334748d
+    [deeplink] => momo://app?action=payWithApp&isScanQR=false&serviceType=app&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzI0OTg1NTYy&v=3.0
+    [qrCodeUrl] => momo://app?action=payWithApp&isScanQR=true&serviceType=qr&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzI0OTg1NTYy&v=3.0
+    [applink] => https://test-applinks.momo.vn/payment/v2?action=payWithApp&isScanQR=false&serviceType=app&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzI0OTg1NTYy&v=3.0&deeplinkCallback=http%3A%2F%2Ftravel.name.vn%2Fbookings.php&callBackUrl=http%3A%2F%2Ftravel.name.vn%2Fbookings.php
+    [deeplinkMiniApp] => momo://app?action=payWithApp&isScanQR=false&serviceType=miniapp&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzI0OTg1NTYy&v=3.0
+    [signature] => 8b4023f725d0abbfae6f5114523db33fd2a258c625eb60ba606b2344150e6fea
+)
+Array
+(
+    [partnerCode] => MOMOBKUN20180529
+    [orderId] => 1724998200
+    [requestId] => 1724998200
+    [amount] => 3999000
+    [responseTime] => 1724998209534
+    [message] => Thành công.
+    [resultCode] => 0
+    [payUrl] => https://test-payment.momo.vn/v2/gateway/pay?t=TU9NT0JLVU4yMDE4MDUyOXwxNzI0OTk4MjAw&s=e61a5916e723045b4a745be6d4622507435fd0da861e0b69aec4ec8ee38f19f3
+    [deeplink] => momo://app?action=payWithApp&isScanQR=false&serviceType=app&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzI0OTk4MjAw&v=3.0
+    [qrCodeUrl] => momo://app?action=payWithApp&isScanQR=true&serviceType=qr&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzI0OTk4MjAw&v=3.0
+    [applink] => https://test-applinks.momo.vn/payment/v2?action=payWithApp&isScanQR=false&serviceType=app&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzI0OTk4MjAw&v=3.0&deeplinkCallback=http%3A%2F%2Ftravel.name.vn%2Fbookings.php&callBackUrl=http%3A%2F%2Ftravel.name.vn%2Fbookings.php
+    [deeplinkMiniApp] => momo://app?action=payWithApp&isScanQR=false&serviceType=miniapp&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzI0OTk4MjAw&v=3.0
+    [signature] => 767bd0fdcb81063139d5788b0a589d1196744de0fa82ba927f730f03307f54dc
+)
+Array
+(
+    [partnerCode] => MOMOBKUN20180529
+    [orderId] => 1734463570
+    [requestId] => 1734463570
+    [amount] => 1500000
+    [responseTime] => 1734463570531
+    [message] => Thành công.
+    [resultCode] => 0
+    [payUrl] => https://test-payment.momo.vn/v2/gateway/pay?s=a6a6686d991f2944be10d5bab1640945ac7d8169f141cdd3408cb7d2ae2d2a89&t=TU9NT0JLVU4yMDE4MDUyOXwxNzM0NDYzNTcw
+    [deeplink] => momo://app?action=payWithApp&isScanQR=false&serviceType=app&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzM0NDYzNTcw&v=3.0
+    [qrCodeUrl] => 00020101021226110007vn.momo38620010A00000072701320006970454011899MM24353O000000040208QRIBFTTA5303704540715000005802VN62420515MMTcP98eggowBQR0819Thanh toan qua MoMo63041F92
+    [applink] => https://test-applinks.momo.vn/payment/v2?action=payWithApp&isScanQR=false&serviceType=app&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzM0NDYzNTcw&v=3.0&deeplinkCallback=http%3A%2F%2Ftravel.name.vn%2Fbookings.php&callBackUrl=http%3A%2F%2Ftravel.name.vn%2Fbookings.php
+    [deeplinkMiniApp] => momo://app?action=payWithApp&isScanQR=false&serviceType=miniapp&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzM0NDYzNTcw&v=3.0
+    [signature] => e3213425980b2bd584e5a396ce0ea02ef5faa4742b7524cbbc9df4fa1917a717
+)
+Array
+(
+    [partnerCode] => MOMOBKUN20180529
+    [orderId] => 1734964673
+    [requestId] => 1734964673
+    [amount] => 1000000
+    [responseTime] => 1734964676019
+    [message] => Thành công.
+    [resultCode] => 0
+    [payUrl] => https://test-payment.momo.vn/v2/gateway/pay?s=946f098e624f09258090c62925b84002259acd4da0e20149763a0a54da7dc9cd&t=TU9NT0JLVU4yMDE4MDUyOXwxNzM0OTY0Njcz
+    [deeplink] => momo://app?action=payWithApp&isScanQR=false&serviceType=app&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzM0OTY0Njcz&v=3.0
+    [qrCodeUrl] => 00020101021226110007vn.momo38620010A00000072701320006970454011899MM24358O000002350208QRIBFTTA5303704540710000005802VN62420515MMTu2Q3DbBQIzQR0819Thanh toan qua MoMo6304D254
+    [applink] => https://test-applinks.momo.vn/payment/v2?action=payWithApp&isScanQR=false&serviceType=app&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzM0OTY0Njcz&v=3.0&deeplinkCallback=http%3A%2F%2Ftravel.name.vn%2Fbookings.php&callBackUrl=http%3A%2F%2Ftravel.name.vn%2Fbookings.php
+    [deeplinkMiniApp] => momo://app?action=payWithApp&isScanQR=false&serviceType=miniapp&sid=TU9NT0JLVU4yMDE4MDUyOXwxNzM0OTY0Njcz&v=3.0
+    [signature] => 4b72421baaa400430b183f92f4ab5b0bdd945eef36e73e0d18fdc6743b3ba258
+)
