@@ -5,9 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link  rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <?php require('inc/links.php'); ?>
   <title><?php echo $settings_r['site_title'] ?> - TRANG CHỦ</title>
   <style>
+    
     .availability-form{
       margin-top: -50px;
       z-index: 2;
@@ -61,19 +68,19 @@
   <div class="row mt-5">
     <div class="col-lg-12 d-flex justify-content-center">
       <div class="availability-form bg-white shadow p-4 rounded" style="width: 100%; max-width: 800px;">
-        <h5 class="mb-4 text-center">Tìm Phòng</h5>
+        <h5 class="mb-4 text-center" style="font-family: 'Roboto', sans-serif; font-weight: 400;">Tìm Phòng</h5>
         <form action="rooms.php">
           <div class="row align-items-end">
             <div class="col-lg-3 mb-3">
-              <label class="form-label" style="font-weight: 500;">Ngày Nhận Phòng</label>
+              <label class="form-label" style="font-family: 'Roboto', sans-serif; font-weight: 400;">Ngày Nhận Phòng</label>
               <input type="date" class="form-control shadow-none" name="checkin" required>
             </div>
             <div class="col-lg-3 mb-3">
-              <label class="form-label" style="font-weight: 500;">Ngày Trả Phòng</label>
+              <label class="form-label" style="font-family: 'Roboto', sans-serif; font-weight: 400;">Ngày Trả Phòng</label>
               <input type="date" class="form-control shadow-none" name="checkout" required>
             </div>
             <div class="col-lg-2 mb-3">
-              <label class="form-label" style="font-weight: 500;">Người Lớn</label>
+              <label class="form-label" style="font-family: 'Roboto', sans-serif; font-weight: 400;">Người Lớn</label>
               <select class="form-select shadow-none" name="adult">
                 <?php 
                   $guests_q = mysqli_query($con,"SELECT MAX(adult) AS `max_adult`, MAX(children) AS `max_children` 
@@ -87,7 +94,7 @@
               </select>
             </div>
             <div class="col-lg-2 mb-3">
-              <label class="form-label" style="font-weight: 500;">Trẻ Em</label>
+              <label class="form-label" style="font-family: 'Roboto', sans-serif; font-weight: 400;">Trẻ Em</label>
               <select class="form-select shadow-none" name="children">
                 <?php 
                   for($i=1; $i<=$guests_res['max_children']; $i++){
@@ -98,7 +105,7 @@
             </div>
             <input type="hidden" name="check_availability">
             <div class="col-lg-2 mb-lg-3 mt-2">
-              <button type="submit" class="btn text-white shadow-none custom-bg w-100">Tìm Phòng</button>
+              <button type="submit" class="btn text-white shadow-none custom-bg w-100" style="font-family: 'Roboto', sans-serif; font-weight: 400;">Tìm Phòng</button>
             </div>
           </div>
         </form>
@@ -112,7 +119,7 @@
 
   <!-- Our Rooms -->
 
-  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">PHÒNG</h2>
+  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font" style="font-family: 'Montserrat', sans-serif; font-weight: 700; text-align: center;">PHÒNG</h2>
 
   <div class="container">
     <div class="row">
@@ -238,14 +245,14 @@
       ?>
 
       <div class="col-lg-12 text-center mt-5">
-        <a href="rooms.php" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">Xem Thêm >>></a>
+        <a href="rooms.php" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none" style="font-family: 'Roboto', sans-serif; font-weight: 400;">Xem Thêm >>></a>
       </div>
     </div>
   </div>
 
   <!-- Our Facilities -->
 
-  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">CÁC TIỆN NGHI</h2>
+  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font" style="font-family: 'Montserrat', sans-serif; font-weight: 700; text-align: center;">CÁC TIỆN NGHI</h2>
 
   <div class="container">
     <div class="row justify-content-evenly px-lg-0 px-md-0 px-5">
@@ -257,21 +264,21 @@
           echo<<<data
             <div class="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
               <img src="$path$row[icon]" width="60px">
-              <h5 class="mt-3">$row[name]</h5>
+              <h5 class="mt-3" style="font-family: 'Roboto', sans-serif; font-weight: 400;">$row[name]</h5>
             </div>
           data;
         }
       ?>
 
       <div class="col-lg-12 text-center mt-5">
-        <a href="facilities.php" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">Xem thêm >>></a>
+        <a href="facilities.php" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none" style="font-family: 'Roboto', sans-serif; font-weight: 400;">Xem thêm >>></a>
       </div>
     </div>
   </div>
 
   <!-- Testimonials -->
 
-  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">ĐÁNH GIÁ TỪ KHÁCH HÀNG</h2>
+  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font" style="font-family: 'Montserrat', sans-serif; font-weight: 700; text-align: center;">ĐÁNH GIÁ TỪ KHÁCH HÀNG</h2>
 
   <div class="container mt-5">
     <div class="swiper swiper-testimonials">
@@ -320,22 +327,22 @@
       <div class="swiper-pagination"></div>
     </div>
     <div class="col-lg-12 text-center mt-5">
-      <a href="about.php" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">Xem thêm >>></a>
+      <a href="about.php" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none" style="font-family: 'Roboto', sans-serif; font-weight: 400;">Xem thêm >>></a>
     </div>
   </div>
 
   <!-- Reach us -->
 
-  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">LIÊN HỆ</h2>
+  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font" style="font-family: 'Montserrat', sans-serif; font-weight: 700; text-align: center;">LIÊN HỆ</h2>
 
   <div class="container">
    
 
-  <iframe class="border p-2 w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3725.194590591294!2d105.7971769!3d20.9848355!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acc6bdc7f95f%3A0x58ffc66343a45247!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgR2lhbyB0aMO0bmcgVuG6rW4gdOG6o2k!5e0!3m2!1svi!2s!4v1722847979678!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+  <!-- <iframe class="border p-2 w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3725.194590591294!2d105.7971769!3d20.9848355!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acc6bdc7f95f%3A0x58ffc66343a45247!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgR2lhbyB0aMO0bmcgVuG6rW4gdOG6o2k!5e0!3m2!1svi!2s!4v1722847979678!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    <iframe class="border p-2 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4418.213872498693!2d106.8030541!3d10.870008899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527587e9ad5bf%3A0xafa66f9c8be3c91!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiAtIMSQSFFHIFRQLkhDTQ!5e1!3m2!1svi!2s!4v1735012392734!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <div class="col-lg-4 col-md-4">
         <div class="bg-white p-4 rounded mb-4">
-          <h5>Bạn cần hỗ trợ ? Hãy gọi ngay</h5>
+          <h5 style="font-family: 'Roboto', sans-serif; font-weight: 400;">Bạn cần hỗ trợ ? Hãy gọi ngay</h5>
           <a href="tel: +<?php echo $contact_r['pn1'] ?>" class="d-inline-block mb-2 text-decoration-none text-dark">
             <i class="bi bi-telephone-fill"></i> +<?php echo $contact_r['pn1'] ?>
           </a>
@@ -352,7 +359,7 @@
           ?>
         </div>
         <div class="bg-white p-4 rounded mb-4">
-          <h5>Theo dõi ngay</h5>
+          <h5 style="font-family: 'Roboto', sans-serif; font-weight: 400;">Theo dõi ngay</h5>
           <?php 
             if($contact_r['tw']!=''){
               echo<<<data

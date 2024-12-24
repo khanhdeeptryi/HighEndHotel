@@ -4,8 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <?php require('inc/links.php'); ?>
   <title><?php echo $settings_r['site_title'] ?> - PHÒNG</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6, .title {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
 </head>
 <body class="bg-light">
 
@@ -29,7 +43,7 @@
   ?>
 
   <div class="my-5 px-4">
-    <h2 class="fw-bold h-font text-center">PHÒNG</h2>
+    <h2 class="fw-bold h-font text-center" style="font-family: 'Montserrat', sans-serif; font-weight: 700; text-align: center;">PHÒNG</h2>
     <div class="h-line bg-dark"></div>
   </div>
 
@@ -46,19 +60,19 @@
             <div class="collapse navbar-collapse flex-column align-items-stretch mt-2" id="filterDropdown">
               <!-- Kiểm tra tính khả dụng -->
               <div class="border bg-light p-3 rounded mb-3">
-                <h5 class="d-flex align-items-center justify-content-between mb-3" style="font-size: 18px;">
+                <h5 class="d-flex align-items-center justify-content-between mb-3" style="font-family: 'Montserrat', sans-serif; font-weight: 500; text-align: center;"">
                   <span>Kiểm Tra Ngày</span>
                   <button id="chk_avail_btn" onclick="chk_avail_clear()" class="btn shadow-none btn-sm text-secondary d-none">Reset</button>
                 </h5>
-                <label class="form-label">Ngày Nhận Phòng</label>
+                <label class="form-label" style="font-family: 'Roboto', sans-serif; font-weight: 400;">Ngày Nhận Phòng</label>
                 <input type="date" class="form-control shadow-none mb-3" value="<?php echo $checkin_default ?>" id="checkin" onchange="chk_avail_filter()">
-                <label class="form-label">Ngày Trả Phòng</label>
+                <label class="form-label" style="font-family: 'Roboto', sans-serif; font-weight: 400;">Ngày Trả Phòng</label>
                 <input type="date" class="form-control shadow-none" value="<?php echo $checkout_default ?>"  id="checkout" onchange="chk_avail_filter()">
               </div>
 
               <!-- Cơ sở -->
               <div class="border bg-light p-3 rounded mb-3">
-                <h5 class="d-flex align-items-center justify-content-between mb-3" style="font-size: 18px;">
+                <h5 class="d-flex align-items-center justify-content-between mb-3" style="font-family: 'Montserrat', sans-serif; font-weight: 500; text-align: center;"">
                   <span>TIỆN NGHI</span>
                   <button id="facilities_btn" onclick="facilities_clear()" class="btn shadow-none btn-sm text-secondary d-none">Reset</button>
                 </h5>
@@ -67,7 +81,7 @@
                   while($row = mysqli_fetch_assoc($facilities_q))
                   {
                     echo<<<facilities
-                      <div class="mb-2">
+                      <div class="mb-2" style="font-family: 'Roboto', sans-serif; font-weight: 400;">
                         <input type="checkbox" onclick="fetch_rooms()" name="facilities" value="$row[id]" class="form-check-input shadow-none me-1" id="$row[id]">
                         <label class="form-check-label" for="$row[id]">$row[name]</label>
                       </div>
@@ -78,17 +92,17 @@
 
               <!-- Khách -->
               <div class="border bg-light p-3 rounded mb-3">
-                <h5 class="d-flex align-items-center justify-content-between mb-3" style="font-size: 18px;">
+                <h5 class="d-flex align-items-center justify-content-between mb-3" style="font-family: 'Montserrat', sans-serif; font-weight: 500; text-align: center;"">
                   <span>KHÁCH</span>
                   <button id="guests_btn" onclick="guests_clear()" class="btn shadow-none btn-sm text-secondary d-none">Reset</button>
                 </h5>
                 <div class="d-flex">
                   <div class="me-3">
-                    <label class="form-label">Người Lớn</label>
+                    <label class="form-label" style="font-family: 'Roboto', sans-serif; font-weight: 400;">Người Lớn</label>
                     <input type="number" min="1" id="adults" value="<?php echo $adult_default ?>" oninput="guests_filter()" class="form-control shadow-none">                 
                   </div>
                   <div>
-                    <label class="form-label">Trẻ Em</label>
+                    <label class="form-label" style="font-family: 'Roboto', sans-serif; font-weight: 400;">Trẻ Em</label>
                     <input type="number" min="1" id="children" value="<?php echo $children_default ?>" oninput="guests_filter()" class="form-control shadow-none">                 
                   </div>
                 </div>
