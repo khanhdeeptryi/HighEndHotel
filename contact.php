@@ -4,17 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <?php require('inc/links.php'); ?>
   <title><?php echo $settings_r['site_title'] ?> - LIÊN HỆ</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6, .title {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
 </head>
 <body class="bg-light">
 
   <?php require('inc/header.php'); ?>
 
   <div class="my-5 px-4">
-    <h2 class="fw-bold h-font text-center">LIÊN HỆ CHÚNG TÔI</h2>
+    <h2 class="fw-bold h-font text-center" style="font-family: 'Montserrat', sans-serif; font-weight: 600; text-align: center;">LIÊN HỆ CHÚNG TÔI</h2>
     <div class="h-line bg-dark"></div>
-    <p class="text-center mt-3">
+    <p class="text-center mt-3" style="font-family: 'Roboto', sans-serif; font-weight: 400;">
       Liên hệ và góp ý với chúng tôi <br>
       .
     </p>
@@ -25,19 +39,19 @@
       <div class="col-lg-6 col-md-6 mb-5 px-4">
         <div class="bg-white rounded shadow p-4">
           <h5>Địa Chỉ</h5>
-          <a href="<?php echo $contact_r['gmap'] ?>" target="_blank" class="d-inline-block text-decoration-none text-dark mb-2">
+          <a href="<?php echo $contact_r['gmap'] ?>" target="_blank" class="d-inline-block text-decoration-none text-dark mb-2" style="font-family: 'Roboto', sans-serif; font-weight: 400;">
             <i class="bi bi-geo-alt-fill"></i> <?php echo $contact_r['address'] ?>
           </a>
 
           <h5 class="mt-4">Liên Hệ Đường Dây Nóng</h5>
-          <a href="tel: +<?php echo $contact_r['pn1'] ?>" class="d-inline-block mb-2 text-decoration-none text-dark">
+          <a href="tel: +<?php echo $contact_r['pn1'] ?>" class="d-inline-block mb-2 text-decoration-none text-dark" style="font-family: 'Roboto', sans-serif; font-weight: 400;">
             <i class="bi bi-telephone-fill"></i> +<?php echo $contact_r['pn1'] ?>
           </a>
           <br>
           <?php 
             if($contact_r['pn2']!=''){
               echo<<<data
-                <a href="tel: +$contact_r[pn2]" class="d-inline-block text-decoration-none text-dark">
+                <a href="tel: +$contact_r[pn2]" class="d-inline-block text-decoration-none text-dark" style="font-family: 'Roboto', sans-serif; font-weight: 400;">
                   <i class="bi bi-telephone-fill"></i> +$contact_r[pn2]
                 </a>
               data;
@@ -45,7 +59,7 @@
           ?>
 
           <h5 class="mt-4">Email</h5>
-          <a href="mailto: <?php echo $contact_r['email'] ?>" class="d-inline-block text-decoration-none text-dark">
+          <a href="mailto: <?php echo $contact_r['email'] ?>" class="d-inline-block text-decoration-none text-dark" style="font-family: 'Roboto', sans-serif; font-weight: 400;">
             <i class="bi bi-envelope-fill"></i> <?php echo $contact_r['email'] ?>
           </a>
 
@@ -71,24 +85,24 @@
       <div class="col-lg-6 col-md-6 px-4">
         <div class="bg-white rounded shadow p-4">
           <form method="POST">
-            <h5>Gửi Tin Nhắn</h5>
+            <h5 style="font-family: 'Montserrat', sans-serif; font-weight: 500; text-align: center;">Gửi Tin Nhắn</h5>
             <div class="mt-3">
-              <label class="form-label" style="font-weight: 500;">Họ và Tên</label>
+              <label class="form-label" style="font-family: 'Roboto', sans-serif; font-weight: 400;">Họ và Tên</label>
               <input name="name" required type="text" class="form-control shadow-none">
             </div>
             <div class="mt-3">
-              <label class="form-label" style="font-weight: 500;">Email</label>
+              <label class="form-label" style="font-family: 'Roboto', sans-serif; font-weight: 400;">Email</label>
               <input name="email" required type="email" class="form-control shadow-none">
             </div>
             <div class="mt-3">
-              <label class="form-label" style="font-weight: 500;">Tiêu Đề</label>
+              <label class="form-label" style="font-family: 'Roboto', sans-serif; font-weight: 400;">Tiêu Đề</label>
               <input name="subject" required type="text" class="form-control shadow-none">
             </div>
             <div class="mt-3">
-              <label class="form-label" style="font-weight: 500;">Tin Nhắn</label>
+              <label class="form-label" style="font-family: 'Roboto', sans-serif; font-weight: 400;">Tin Nhắn</label>
               <textarea name="message" required class="form-control shadow-none" rows="5" style="resize: none;"></textarea>
             </div>
-            <button type="submit" name="send" class="btn text-white custom-bg mt-3">GỬI</button>
+            <button type="submit" name="send" class="btn text-white custom-bg mt-3" style="font-family: 'Roboto', sans-serif; font-weight: 400;">GỬI</button>
           </form>
         </div>
       </div>

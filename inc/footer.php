@@ -1,21 +1,21 @@
 <div class="container-fluid bg-white mt-5">
   <div class="row">
     <div class="col-lg-4 p-4">
-      <h3 class="h-font fw-bold fs-3 mb-2"><?php echo $settings_r['site_title'] ?></h3>
-      <p>
+      <h3 class="h-font fw-bold fs-3 mb-2" style="font-family: 'Montserrat', sans-serif; font-weight: 700; text-align: center;"><?php echo $settings_r['site_title'] ?></h3>
+      <p style="font-family: 'Roboto', sans-serif; font-weight: 400;">
         <?php echo $settings_r['site_about'] ?>
       </p>
     </div>
     <div class="col-lg-4 p-4">
-      <h5 class="mb-3">Links</h5>
-      <a href="index.php" class="d-inline-block mb-2 text-dark text-decoration-none">Trang Chủ</a> <br>
-      <a href="rooms.php" class="d-inline-block mb-2 text-dark text-decoration-none">Phòng</a> <br>
-      <a href="facilities.php" class="d-inline-block mb-2 text-dark text-decoration-none">Tiện Nghi</a> <br>
-      <a href="contact.php" class="d-inline-block mb-2 text-dark text-decoration-none">Liên Hệ</a> <br>
-      <a href="about.php" class="d-inline-block mb-2 text-dark text-decoration-none">Giới Thiệu</a>
+      <h5 class="mb-3" style="font-family: 'Montserrat', sans-serif; font-weight: 500; text-align: center;">Links</h5>
+      <a href="index.php" class="d-inline-block mb-2 text-dark text-decoration-none" style="font-family: 'Roboto', sans-serif; font-weight: 400;">Trang Chủ</a> <br>
+      <a href="rooms.php" class="d-inline-block mb-2 text-dark text-decoration-none" style="font-family: 'Roboto', sans-serif; font-weight: 400;">Phòng</a> <br>
+      <a href="facilities.php" class="d-inline-block mb-2 text-dark text-decoration-none" style="font-family: 'Roboto', sans-serif; font-weight: 400;">Tiện Nghi</a> <br>
+      <a href="contact.php" class="d-inline-block mb-2 text-dark text-decoration-none" style="font-family: 'Roboto', sans-serif; font-weight: 400;">Liên Hệ</a> <br>
+      <a href="about.php" class="d-inline-block mb-2 text-dark text-decoration-none" style="font-family: 'Roboto', sans-serif; font-weight: 400;">Giới Thiệu</a>
     </div>
     <div class="col-lg-4 p-4">
-      <h5 class="mb-3">Theo dõi ngay</h5>
+      <h5 class="mb-3" style="font-family: 'Montserrat', sans-serif; font-weight: 500; text-align: center;">Theo dõi ngay</h5>
       <?php
       if ($contact_r['tw'] != '') {
         echo <<<data
@@ -25,10 +25,10 @@
             data;
       }
       ?>
-      <a href="<?php echo $contact_r['fb'] ?>" class="d-inline-block text-dark text-decoration-none mb-2">
+      <a href="<?php echo $contact_r['fb'] ?>" class="d-inline-block text-dark text-decoration-none mb-2" style="font-family: 'Roboto', sans-serif; font-weight: 400;">
         <i class="bi bi-facebook me-1"></i> Facebook
       </a><br>
-      <a href="<?php echo $contact_r['insta'] ?>" class="d-inline-block text-dark text-decoration-none">
+      <a href="<?php echo $contact_r['insta'] ?>" class="d-inline-block text-dark text-decoration-none" style="font-family: 'Roboto', sans-serif; font-weight: 400;">
         <i class="bi bi-instagram me-1"></i> Instagram
       </a><br>
     </div>

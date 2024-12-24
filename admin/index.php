@@ -35,7 +35,7 @@
   
   <div class="login-form text-center rounded bg-white shadow overflow-hidden">
     <form method="POST">
-      <img src="/khachsan/images/logo/logo.gif" class="logo" alt="Admin Logo"> <!-- Thêm hình ảnh ở đây -->
+      <img src="\HighEndHotel\images\images\logo-white-rec.png" class="logo" alt="Admin Logo"> <!-- Thêm hình ảnh ở đây -->
       <h4 class="bg-dark text-white py-3">ĐĂNG NHẬP QUẢN TRỊ</h4>
       <div class="p-4">
         <div class="mb-3">
